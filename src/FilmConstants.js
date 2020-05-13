@@ -87,7 +87,7 @@ export const INCOMPLETE_3_HTML = (
       </li>
       <li>{`Add an event handler inside the film effect to use the provided onIdChange function`}
         <ul>
-          <li>{`when id is different than previous id `}</li>
+          <li>{`Modify the effect to run when onIdChange is changed along with id`}</li>
         </ul>
       </li>
     </ol>
