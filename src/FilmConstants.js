@@ -42,7 +42,6 @@ export const INCOMPLETE_2_HTML = (
   <>
     <li>In <strong>FilmsHook.js</strong>:</li>
     <ol>
-      <li>{`Create a variable called 'match' which captures the route match object`}</li>
       <li>{`Add state:`}
         <ol type="a">
           <li>{`Make 'id' stateful with an initial state of an empty string`}</li>
@@ -50,6 +49,11 @@ export const INCOMPLETE_2_HTML = (
         </ol>
       </li>
       <li>{`Write an effect hook for 'films' to fetch film list using the provided fetchFilms function and set it only once upon initialization`}</li>
+      <li>{`Create a variable called 'match' which captures the route match object`}
+        <ul>
+          <li>{`Add a "to" property to the ListGroup.Item elements to link to the film details. Use the match object and film.id`}</li>
+        </ul>
+      </li>
       <li>{`Replace { C.INCOMPLETE_2_FULL } with  two <Route> components within a <Switch> component`}
         <ol type="a">
           <li>{`The first route will render the <FilmDetails> component if the path is exactly the match path + "/:id"`}</li>
