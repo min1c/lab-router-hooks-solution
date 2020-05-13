@@ -49,7 +49,7 @@ export const Films = () => {
   return (
     <Container>
       <h3 className="display-3" style={{'marginBottom': '10px'}}>
-        Ghibli Films
+        { !films ? "Part 2 Incomplete" : films.length > 0 ? "Ghibli Films" : ""}
       </h3>
       <Row>
         <Tab.Container id="film-list-container">
@@ -57,7 +57,7 @@ export const Films = () => {
             <div style={{'height': '70vh', 'overflowY': 'auto', 'padding': 0}}>
               <ListGroup id="filmList">
                 {
-                  films.map(film =>  {
+                  ( films ? films : [] ).map(film =>  {
                     return (
                       <ListGroup.Item as={ Link } key={ film.id } action variant='light'
                                       to={ `${match.url}/${film.id}` }
